@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-image: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 90px;
+    font-size: 39px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#board{
+    background: linear-gradient(rgb(164, 222, 164),rgb(185, 185, 104));
+    height: 90vmin;
+    width: 88vmin;
+    border: solid black;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(red , blue) ;
+    border-radius: .5rem;
+}
+.snake{
+    background:linear-gradient(blue,black);
+    border: .25vmin;
+    border-radius: 5rem;
+}
+.food{
+    background: linear-gradient(white,red);
+    
+    border: .25vmin;
+    border-radius: 1rem;
+}
+     
